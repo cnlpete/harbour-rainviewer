@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Icon=harbour-rainviewer
+X-Nemo-Application-Type=silica-qt5
+Exec=sailfish-qml harbour-rainviewer
+Name=Rainviewer
+Name[de]=Regenradar
+
+[X-Sailjail]
+OrganizationName=de.cnlpete
+ApplicationName=harbour-rainviewer
+Permissions=Internet;Location
