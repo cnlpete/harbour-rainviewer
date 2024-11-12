@@ -16,7 +16,8 @@ jobs:
     name: Build App
     strategy:
       matrix:
-        arch: ['armv7hl', 'aarch64', 'i486']
+        arch: ['aarch64'] # only building one arch, since result is noarch
+        #arch: ['armv7hl', 'aarch64', 'i486']
 
     steps:
     - uses: actions/checkout@v2
