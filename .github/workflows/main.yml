@@ -33,10 +33,19 @@ jobs:
         release: 4.5.0.16
 
     - name: Upload RPM (${{ matrix.arch }})
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4.4.3
       with:
         name: rpm-${{ matrix.arch }}
         path: RPMS
+
+  release:
+    runs-on: ubuntu-latest
+    name: Release App
+    needs: build
+    if: contains(github.ref, 'v')
+    steps:
+    - name: Download RPM
+      uses: actions/download-artifact@v4.1.8
 
     - name: Create release
       if: contains(github.ref, 'v')
