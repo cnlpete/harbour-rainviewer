@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de_DE">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de_DE">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="42"/>
         <source>Rainviewer %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Rainviewer %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="62"/>
@@ -31,17 +29,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="104"/>
         <source>If you encounter bugs or have feature requests, please file tickets in the Issue Tracker: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn dir Fehler auffallen, oder du Verbesserungsvorschläge hast, nutze bitte den Issue Tracker: %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="117"/>
         <source>Buy me a beer</source>
-        <translation type="unfinished"></translation>
+        <translation>Buy me a beer</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="124"/>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Webseite</translation>
     </message>
 </context>
 <context>
