@@ -2,7 +2,9 @@
 
 [![build all arch for sailfish](https://github.com/cnlpete/harbour-rainviewer/actions/workflows/main.yml/badge.svg)](https://github.com/cnlpete/harbour-rainviewer/actions/workflows/main.yml)
 
-A simple rain radar app for SailfishOS with the data from https://rainviewer.com
+A simple rain radar app for SailfishOS with the data from [rainviewer.com](https://rainviewer.com).
+
+Installable via [Chum](https://build.sailfishos.org/package/show/sailfishos:chum:testing/harbour-rainviewer) and [OpenRepos](https://openrepos.net/content/cnlpete/rainviewer).
 
 ## Screenshots
 
