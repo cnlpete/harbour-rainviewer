@@ -4,7 +4,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="42"/>
         <source>Rainviewer %1</source>
-        <translation>Rainviewer %1</translation>
+        <translation>Regenradar %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="62"/>
@@ -143,10 +143,10 @@
     <message>
         <location filename="../qml/pages/StartPage.qml" line="61"/>
         <source>Rainviewer</source>
-        <translation>Rainviewer</translation>
+        <translation>Regenradar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="222"/>
+        <location filename="../qml/pages/StartPage.qml" line="216"/>
         <source>Scale: %0 m/pixel ; zoom: %1</source>
         <translation>Skalierung: %0 m/Pixel; Zoom: %1</translation>
     </message>

@@ -148,7 +148,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="222"/>
+        <location filename="../qml/pages/StartPage.qml" line="216"/>
         <source>Scale: %0 m/pixel ; zoom: %1</source>
         <translation type="unfinished"></translation>
     </message>
