@@ -39,6 +39,8 @@ ApplicationWindow {
         property int rainColorScheme: 2
         property bool useGps: true
         property bool followGps: true
+        property real lastLat: 60.170448 // Helsinki
+        property real lastLng: 24.942046 // Helsinki
     }
 
     Constants {

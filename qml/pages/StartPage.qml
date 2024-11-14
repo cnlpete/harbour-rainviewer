@@ -121,7 +121,7 @@ Page {
                 id: map
                 anchors.fill: parent
 
-                center: QtPositioning.coordinate(60.170448, 24.942046) // Helsinki
+                center: QtPositioning.coordinate(settings.lastLat, settings.lastLng)
                 zoomLevel: 11.0
                 metersPerPixelTolerance: 0.1
                 minimumZoomLevel: 6
@@ -132,6 +132,29 @@ Page {
                 accessToken: settings.mapboxApiKey
                 cacheDatabaseDefaultPath: true
 
+                onCenterChanged: {
+                    delayedValue.lat = center.latitude
+                    delayedValue.lng = center.longitude
+                }
+                Timer {
+                    function restart() {
+                        running = false
+                        running = true
+                    }
+
+                    id: delayedValue
+                    interval: 500
+                    repeat: false
+                    onTriggered: {
+                        settings.lastLat = delayedValue.lat
+                        settings.lastLng = delayedValue.lng
+                    }
+
+                    property real lat: settings.lastLat
+                    onLatChanged: restart()
+                    property real lng: settings.lastLng
+                    onLngChanged: restart()
+                }
 
                 Behavior on center {
                     CoordinateAnimation {
