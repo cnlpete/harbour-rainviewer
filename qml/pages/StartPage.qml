@@ -38,6 +38,14 @@ Page {
         PullDownMenu {
             busy: loading
             MenuItem {
+                text: qsTr("Clear Map Cache")
+                onClicked: {
+                    remorse.execute(qsTr("Clearing map cache"), function() {
+                        map.clearCache()
+                    })
+                }
+            }
+            MenuItem {
                 text: qsTr("About")
                 onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
             }
@@ -46,6 +54,8 @@ Page {
                 onClicked: pageStack.push(Qt.resolvedUrl("Settings.qml"))
             }
         }
+
+        RemorsePopup { id: remorse }
 
         PageHeader {
             title: qsTr("Rainviewer")

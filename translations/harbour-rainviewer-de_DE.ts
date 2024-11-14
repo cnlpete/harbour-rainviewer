@@ -122,21 +122,31 @@
     <name>StartPage</name>
     <message>
         <location filename="../qml/pages/StartPage.qml" line="41"/>
+        <source>Clear Map Cache</source>
+        <translation>Räume Karten Cache auf</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StartPage.qml" line="43"/>
+        <source>Clearing map cache</source>
+        <translation>Räume Karten Cache auf</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StartPage.qml" line="49"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="45"/>
+        <location filename="../qml/pages/StartPage.qml" line="53"/>
         <source>Settings</source>
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="51"/>
+        <location filename="../qml/pages/StartPage.qml" line="61"/>
         <source>Rainviewer</source>
         <translation>Rainviewer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="183"/>
+        <location filename="../qml/pages/StartPage.qml" line="222"/>
         <source>Scale: %0 m/pixel ; zoom: %1</source>
         <translation>Skalierung: %0 m/Pixel; Zoom: %1</translation>
     </message>
