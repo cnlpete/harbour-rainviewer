@@ -9,7 +9,7 @@ Name:       harbour-rainviewer
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 
 Summary:    Rainviewer
-Version:    0.1.0
+Version:    0.2.0
 Release:    1
 Group:      Applications/Internet
 License:    GPLv3

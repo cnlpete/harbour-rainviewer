@@ -22,7 +22,7 @@ import QtQuick 2.0
 QtObject {
     id: constant
 
-    property string version: "v0.1.0"
+    property string version: "v0.2.0"
     property url website: "https://github.com/cnlpete/harbour-rainviewer/"
     property url sourceRepoSite: "https://github.com/cnlpete/harbour-rainviewer/"
     property url issueTrackerUrl: "https://github.com/cnlpete/harbour-rainviewer/issues"
