@@ -44,7 +44,9 @@ Custom:
  - Repo: https://github.com/cnlpete/harbour-rainviewer
 Icon: https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/icons/172x172/harbour-rainviewer.png
 Screenshots:
- - https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/main.png
+ - https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/screenshots/photo_5303021482609338244_w.jpg
+ - https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/screenshots/photo_5303021482609338240_w.jpg
+ - https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/screenshots/photo_5303021482609338239_w.jpg
 Url:
   Homepage: https://github.com/cnlpete/harbour-rainviewer
   Help: https://github.com/cnlpete/harbour-rainviewer/discussions
