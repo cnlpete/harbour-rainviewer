@@ -239,7 +239,7 @@ Page {
 
             Timer {
                 interval: 2500
-                running: valueKeeper.autoplayActive && model.count > 0
+                running: valueKeeper.autoplayActive && model.count > 0 && page.visible
                 repeat: true
                 onTriggered: {
                     slider.value = slider.value + 1 > slider.maximumValue ? slider.minimumValue : slider.value + 1
