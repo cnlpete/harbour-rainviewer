@@ -32,7 +32,7 @@ ApplicationWindow {
         synchronous: true
 
         property string mapboxApiKey
-        property string mapstyle: "http://localhost:8553/v1/mbgl/style?style=osmbright"
+        property string mapstyle: "https://tiles.openfreemap.org/styles/bright"
         property int tileSize: 256
         property bool immediateSlider: true
         property bool antialiasing: true
