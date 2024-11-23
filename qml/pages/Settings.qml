@@ -67,7 +67,7 @@ Dialog {
 
                 menu: ContextMenu {
                     MenuItem {
-                        text: "Osmscout Server"
+                        text: "OSMScout Server (required to run locally)"
                         property string url: "http://localhost:8553/v1/mbgl/style?style=osmbright"
                         Component.onCompleted: if (url === settings.mapstyle) mapstyleSetting.currentIndex = 0
                     }
