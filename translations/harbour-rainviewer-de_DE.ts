@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de_DE">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="de_DE">
 <context>
     <name>About</name>
     <message>
@@ -70,50 +72,42 @@
         <translation>Karten Stil</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="66"/>
-        <location filename="../qml/pages/Settings.qml" line="115"/>
-        <location filename="../qml/pages/Settings.qml" line="122"/>
-        <location filename="../qml/pages/Settings.qml" line="140"/>
-        <source>You need to restart the App for this to take effect.</source>
-        <translation>Du musst die App neustarten, damit diese Einstellung sichtbar wird.</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Settings.qml" line="95"/>
+        <location filename="../qml/pages/Settings.qml" line="94"/>
         <source>Enable GPS</source>
         <translation>Aktiviere GPS</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="96"/>
+        <location filename="../qml/pages/Settings.qml" line="95"/>
         <source>Will enable gps tracking while the application is visible</source>
         <translation>Während die App angezeigt wird, wird aktiv die aktuelle Position gesucht.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="102"/>
+        <location filename="../qml/pages/Settings.qml" line="101"/>
         <source>Follow GPS</source>
         <translation>Folge GPS</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="104"/>
+        <location filename="../qml/pages/Settings.qml" line="103"/>
         <source>Will make the view follow your gps position</source>
         <translation>Bringe die aktuelle GPS Position ins Sichtfeld, wenn sich die Position ändert.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="109"/>
+        <location filename="../qml/pages/Settings.qml" line="108"/>
         <source>Rain settings</source>
         <translation>Regen Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="114"/>
+        <location filename="../qml/pages/Settings.qml" line="113"/>
         <source>Smooth Rain Rendering</source>
         <translation>Sanfte Regen Darstellung</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="121"/>
+        <location filename="../qml/pages/Settings.qml" line="119"/>
         <source>Rain resolution</source>
         <translation>Auflösung</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="139"/>
+        <location filename="../qml/pages/Settings.qml" line="136"/>
         <source>Rain color scheme</source>
         <translation>Farbschema</translation>
     </message>
@@ -121,32 +115,32 @@
 <context>
     <name>StartPage</name>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="41"/>
+        <location filename="../qml/pages/StartPage.qml" line="48"/>
         <source>Clear Map Cache</source>
         <translation>Räume Karten Cache auf</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="43"/>
+        <location filename="../qml/pages/StartPage.qml" line="50"/>
         <source>Clearing map cache</source>
         <translation>Räume Karten Cache auf</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="49"/>
+        <location filename="../qml/pages/StartPage.qml" line="56"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="53"/>
+        <location filename="../qml/pages/StartPage.qml" line="60"/>
         <source>Settings</source>
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="61"/>
+        <location filename="../qml/pages/StartPage.qml" line="68"/>
         <source>Rainviewer</source>
         <translation>Regenradar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="216"/>
+        <location filename="../qml/pages/StartPage.qml" line="254"/>
         <source>Scale: %0 m/pixel ; zoom: %1</source>
         <translation>Skalierung: %0 m/Pixel; Zoom: %1</translation>
     </message>
