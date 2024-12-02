@@ -36,6 +36,7 @@ ApplicationWindow {
         property int tileSize: 256
         property bool immediateSlider: true
         property bool antialiasing: true
+        property bool snow: true
         property int rainColorScheme: 2
         property bool useGps: true
         property bool followGps: true

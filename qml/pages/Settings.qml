@@ -114,6 +114,12 @@ Dialog {
                 checked: settings.antialiasing
             }
 
+            TextSwitch {
+                id: snowSetting
+                text: qsTr('Enable snow')
+                checked: settings.snow
+            }
+
             ComboBox {
                 id: rainResolutionSetting
                 label: qsTr("Rain resolution")
@@ -178,6 +184,7 @@ Dialog {
         settings.rainColorScheme = rainColorSetting.currentIndex
         //settings.immediateSlider = true // TODO
         settings.antialiasing = antialiasingSetting.checked
+        settings.snow = snowSetting.checked
 
         settings.useGps = gpsSetting.checked
         if (gpsFollowSetting.visible) {

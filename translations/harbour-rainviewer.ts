@@ -103,11 +103,16 @@
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="119"/>
+        <source>Enable snow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="125"/>
         <source>Rain resolution</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="136"/>
+        <location filename="../qml/pages/Settings.qml" line="142"/>
         <source>Rain color scheme</source>
         <translation type="unfinished"></translation>
     </message>
@@ -115,32 +120,32 @@
 <context>
     <name>StartPage</name>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="48"/>
+        <location filename="../qml/pages/StartPage.qml" line="49"/>
         <source>Clear Map Cache</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="50"/>
+        <location filename="../qml/pages/StartPage.qml" line="51"/>
         <source>Clearing map cache</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="56"/>
+        <location filename="../qml/pages/StartPage.qml" line="57"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="60"/>
+        <location filename="../qml/pages/StartPage.qml" line="61"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="68"/>
+        <location filename="../qml/pages/StartPage.qml" line="69"/>
         <source>Rainviewer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="254"/>
+        <location filename="../qml/pages/StartPage.qml" line="255"/>
         <source>Scale: %0 m/pixel ; zoom: %1</source>
         <translation type="unfinished"></translation>
     </message>
