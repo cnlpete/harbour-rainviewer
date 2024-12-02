@@ -63,7 +63,6 @@ Dialog {
                 id: mapstyleSetting
                 label: qsTr("Map style")
                 currentIndex: 0
-                description: qsTr('You need to restart the App for this to take effect.')
 
                 menu: ContextMenu {
                     MenuItem {
@@ -112,14 +111,12 @@ Dialog {
             TextSwitch {
                 id: antialiasingSetting
                 text: qsTr('Smooth Rain Rendering')
-                description: qsTr('You need to restart the App for this to take effect.')
                 checked: settings.antialiasing
             }
 
             ComboBox {
                 id: rainResolutionSetting
                 label: qsTr("Rain resolution")
-                description: qsTr('You need to restart the App for this to take effect.')
                 currentIndex: settings.tileSize === 256 ? 0 : 1
 
                 menu: ContextMenu {
@@ -137,7 +134,6 @@ Dialog {
             ComboBox {
                 id: rainColorSetting
                 label: qsTr("Rain color scheme")
-                description: qsTr('You need to restart the App for this to take effect.')
                 currentIndex: settings.rainColorScheme
 
                 menu: ContextMenu {
