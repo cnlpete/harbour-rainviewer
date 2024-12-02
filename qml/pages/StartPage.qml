@@ -33,7 +33,8 @@ Page {
     property bool loading: false
 
     readonly property string smoothOpt: settings.antialiasing ? "1" : "0"
-    readonly property string urlPostFix: settings.tileSize + "/{z}/{x}/{y}/" + settings.rainColorScheme + "/" + smoothOpt + "_0.png"
+    readonly property string snowOpt: settings.snow ? "1" : "0"
+    readonly property string urlPostFix: settings.tileSize + "/{z}/{x}/{y}/" + settings.rainColorScheme + "/" + smoothOpt + "_" + snowOpt + ".png"
     onUrlPostFixChanged: {
         console.log("url-postfix changed")
         loader.reload()
