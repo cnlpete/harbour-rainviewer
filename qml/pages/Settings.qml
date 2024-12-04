@@ -96,14 +96,6 @@ Dialog {
                 checked: settings.useGps
             }
 
-            TextSwitch {
-                id: gpsFollowSetting
-                text: qsTr('Follow GPS')
-                visible: gpsSetting.checked
-                description: qsTr('Will make the view follow your gps position')
-                checked: settings.followGps
-            }
-
             SectionHeader {
                 text: qsTr("Rain settings")
             }
@@ -187,8 +179,5 @@ Dialog {
         settings.snow = snowSetting.checked
 
         settings.useGps = gpsSetting.checked
-        if (gpsFollowSetting.visible) {
-            settings.followGps = gpsFollowSetting.checked
-        }
     }
 }

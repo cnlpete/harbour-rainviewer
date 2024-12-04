@@ -82,37 +82,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="101"/>
-        <source>Follow GPS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Settings.qml" line="103"/>
-        <source>Will make the view follow your gps position</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/Settings.qml" line="108"/>
+        <location filename="../qml/pages/Settings.qml" line="100"/>
         <source>Rain settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="113"/>
+        <location filename="../qml/pages/Settings.qml" line="105"/>
         <source>Smooth Rain Rendering</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="119"/>
+        <location filename="../qml/pages/Settings.qml" line="111"/>
         <source>Enable snow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="125"/>
+        <location filename="../qml/pages/Settings.qml" line="117"/>
         <source>Rain resolution</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Settings.qml" line="142"/>
+        <location filename="../qml/pages/Settings.qml" line="134"/>
         <source>Rain color scheme</source>
         <translation type="unfinished"></translation>
     </message>
@@ -145,7 +135,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="255"/>
+        <location filename="../qml/pages/StartPage.qml" line="209"/>
         <source>Scale: %0 m/pixel ; zoom: %1</source>
         <translation type="unfinished"></translation>
     </message>

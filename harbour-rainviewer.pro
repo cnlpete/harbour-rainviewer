@@ -17,6 +17,7 @@ CONFIG += sailfishapp_qml
 DISTFILES += \
     #qml/harbour-rainviewer.qml \
     qml/components/Constants.qml \
+    qml/components/GPSButton.qml \
     qml/components/RainModel.qml \
     qml/components/NetworkCall.js \
     qml/cover/CoverPage.qml \
