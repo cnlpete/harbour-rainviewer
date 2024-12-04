@@ -123,10 +123,7 @@ Page {
             id: mapComp
 
             Item {
-                anchors.right: parent.right
-                anchors.left: parent.left
-                anchors.top: header.bottom
-                anchors.bottom: parent.bottom
+                anchors.fill: parent
 
                 Item {
                     id: mapItem
@@ -136,49 +133,6 @@ Page {
                     anchors.margins: 10
 
                     height: parent.height - bottom.height
-
-                    PositionSource {
-                         id: positionSource
-                         active: page.visible && settings.useGps
-
-                         function update_map() {
-                             map.updateSourcePoint("gps", positionSource.position.coordinate.latitude, positionSource.position.coordinate.longitude)
-
-                             if (positionSource.position.longitudeValid && positionSource.position.latitudeValid) {
-                                 map.setPaintProperty("gps-case", "circle-color", "white")
-                                 if (settings.followGps) {
-                                     map.fitView([positionSource.position.coordinate])
-                                 }
-                             }
-                             else {
-                                 map.setPaintProperty("gps-case", "circle-color", "grey")
-                             }
-
-                             if (positionSource.position.horizontalAccuracyValid) {
-                                 map.setPaintProperty("gps-uncertainty", "circle-radius", positionSource.position.horizontalAccuracy / map.metersPerPixel)
-                                 map.setPaintProperty("gps-uncertainty", "circle-color", "#87cefa")
-                                 map.setPaintProperty("gps-uncertainty", "circle-opacity", 0.25)
-                             }
-                         }
-
-
-                         onPositionChanged: {
-                             update_map()
-                         }
-
-                         Component.onCompleted: {
-                             map.updateSourcePoint("gps", positionSource.position.coordinate.latitude, positionSource.position.coordinate.longitude)
-
-                             map.addLayer("gps-uncertainty", {"type": "circle", "source": "gps"}, "gps-case")
-                             map.setPaintProperty("gps-uncertainty", "circle-radius", 0)
-
-                             map.addLayer("gps-case", {"type": "circle", "source": "gps"})
-                             map.setPaintProperty("gps-case", "circle-radius", 10)
-                             map.setPaintProperty("gps-case", "circle-color", "grey")
-
-                             map.fitView([positionSource.position.coordinate])
-                         }
-                    }
 
                     MapboxMap {
                         id: map
@@ -244,7 +198,7 @@ Page {
 
                     Connections {
                         target: map
-                        onMetersPerPixelChanged: positionSource.update_map()
+                        onMetersPerPixelChanged: gpsButton.update_map()
                     }
 
                     Label {
@@ -337,7 +291,61 @@ Page {
                         }
 
                         height: parent.height
-                        width: parent.width - icon.width
+                        width: parent.width - icon.width - gpsButton.width
+                    }
+
+                    GPSButton {
+                        id: gpsButton
+                        height: Theme.iconSizeMedium
+                        width: height
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.leftMargin: Theme.horizontalPageMargin
+
+                        onClicked: {
+                            map.center = position.coordinate
+                        }
+
+                        onFollowGpsChanged: {
+                            if (followGps) {
+                                map.fitView([position.coordinate])
+                            }
+                        }
+
+                        onPositionChanged: {
+                            if (followGps) {
+                                map.fitView([position.coordinate])
+                            }
+
+                            update_map()
+                        }
+
+                        function update_map() {
+                            map.updateSourcePoint("gps", position.coordinate.latitude, position.coordinate.longitude)
+
+                            if (position.horizontalAccuracyValid) {
+                                map.setPaintProperty("gps-case", "circle-color", "white")
+                            }
+                            else {
+                                map.setPaintProperty("gps-case", "circle-color", "grey")
+                            }
+
+                            if (position.horizontalAccuracyValid) {
+                                map.setPaintProperty("gps-uncertainty", "circle-radius", position.horizontalAccuracy / map.metersPerPixel)
+                                map.setPaintProperty("gps-uncertainty", "circle-color", "#87cefa")
+                                map.setPaintProperty("gps-uncertainty", "circle-opacity", 0.25)
+                            }
+                        }
+
+                        Component.onCompleted: {
+                            map.updateSourcePoint("gps", position.coordinate.latitude, position.coordinate.longitude)
+
+                            map.addLayer("gps-uncertainty", {"type": "circle", "source": "gps"}, "gps-case")
+                            map.setPaintProperty("gps-uncertainty", "circle-radius", 0)
+
+                            map.addLayer("gps-case", {"type": "circle", "source": "gps"})
+                            map.setPaintProperty("gps-case", "circle-radius", 10)
+                            map.setPaintProperty("gps-case", "circle-color", "grey")
+                        }
                     }
 
                     Repeater {
