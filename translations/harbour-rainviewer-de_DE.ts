@@ -45,6 +45,14 @@
     </message>
 </context>
 <context>
+    <name>ColorLegend</name>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="34"/>
+        <source>Color legend</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Settings</name>
     <message>
         <location filename="../qml/pages/Settings.qml" line="52"/>
@@ -130,12 +138,17 @@
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="69"/>
+        <location filename="../qml/pages/StartPage.qml" line="65"/>
+        <source>Color legend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StartPage.qml" line="73"/>
         <source>Rainviewer</source>
         <translation>Regenradar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="209"/>
+        <location filename="../qml/pages/StartPage.qml" line="213"/>
         <source>Scale: %0 m/pixel ; zoom: %1</source>
         <translation>Skalierung: %0 m/Pixel; Zoom: %1</translation>
     </message>
