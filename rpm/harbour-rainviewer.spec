@@ -9,7 +9,7 @@ Name:       harbour-rainviewer
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 
 Summary:    Rainviewer
-Version:    0.2.0
+Version:    0.3.0
 Release:    1
 Group:      Applications/Internet
 License:    GPLv3
@@ -49,6 +49,7 @@ Screenshots:
  - https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/screenshots/photo_5303021482609338244_w.jpg
  - https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/screenshots/photo_5303021482609338240_w.jpg
  - https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/screenshots/photo_5303021482609338239_w.jpg
+ - https://raw.githubusercontent.com/cnlpete/harbour-rainviewer/master/screenshots/photo_5400178367308883249_w.jpg
 Url:
   Homepage: https://github.com/cnlpete/harbour-rainviewer
   Help: https://github.com/cnlpete/harbour-rainviewer/discussions
