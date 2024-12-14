@@ -18,6 +18,8 @@ URL:        https://github.com/cnlpete/harbour-rainviewer
 Source0:    %{name}-%{version}.tar.bz2
 Requires:   sailfishsilica-qt5 >= 1.1.0
 Requires:   libsailfishapp-launcher
+Requires:   qt5-qtdeclarative-import-positioning >= 5.2
+Requires:   mapboxgl-qml >= 2.0.0
 
 BuildRequires:  qt5-qttools-linguist
 BuildRequires:  pkgconfig(sailfishapp)
