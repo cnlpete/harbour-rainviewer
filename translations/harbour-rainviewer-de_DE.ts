@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de_DE">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de_DE">
 <context>
     <name>About</name>
     <message>
@@ -49,62 +47,62 @@
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="35"/>
         <source>Color legend</source>
-        <translation type="unfinished"></translation>
+        <translation>Farblegende</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="50"/>
         <source>Rain</source>
-        <translation type="unfinished"></translation>
+        <translation>Regen</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="53"/>
         <source>Snow</source>
-        <translation type="unfinished"></translation>
+        <translation>Schnee</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="265"/>
         <source>Overcast</source>
-        <translation type="unfinished"></translation>
+        <translation>Bedeckt</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="268"/>
         <source>Drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieselregen</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="271"/>
         <source>Light rain</source>
-        <translation type="unfinished"></translation>
+        <translation>Leichter Regen</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="274"/>
         <source>Moderate rain</source>
-        <translation type="unfinished"></translation>
+        <translation>Mittelstarker Regen</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="277"/>
         <source>Shower</source>
-        <translation type="unfinished"></translation>
+        <translation>Schauer</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="280"/>
         <source>Hail</source>
-        <translation type="unfinished"></translation>
+        <translation>Hagel</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="290"/>
         <source>Light</source>
-        <translation type="unfinished"></translation>
+        <translation>Leicht</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="294"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Mittel</translation>
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="298"/>
         <source>Heavy</source>
-        <translation type="unfinished"></translation>
+        <translation>Stark</translation>
     </message>
 </context>
 <context>
@@ -157,7 +155,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="111"/>
         <source>Enable snow</source>
-        <translation>Schnee</translation>
+        <translation>Aktiviere Schnee</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="117"/>
@@ -195,7 +193,7 @@
     <message>
         <location filename="../qml/pages/StartPage.qml" line="65"/>
         <source>Color legend</source>
-        <translation type="unfinished"></translation>
+        <translation>Farblegende</translation>
     </message>
     <message>
         <location filename="../qml/pages/StartPage.qml" line="73"/>
