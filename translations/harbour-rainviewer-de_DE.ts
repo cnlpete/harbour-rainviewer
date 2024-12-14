@@ -93,7 +93,7 @@
     </message>
     <message>
         <location filename="../qml/pages/ColorLegend.qml" line="290"/>
-        <source>Light snow</source>
+        <source>Light</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
