@@ -22,6 +22,7 @@ DISTFILES += \
     qml/components/NetworkCall.js \
     qml/cover/CoverPage.qml \
     qml/pages/About.qml \
+    qml/pages/ColorLegend.qml \
     qml/pages/Settings.qml \
     translations/harbour-rainviewer.ts \
     translations/harbour-rainviewer-de_DE.ts \

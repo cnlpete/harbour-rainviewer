@@ -45,6 +45,69 @@
     </message>
 </context>
 <context>
+    <name>ColorLegend</name>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="35"/>
+        <source>Color legend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="50"/>
+        <source>Rain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="53"/>
+        <source>Snow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="265"/>
+        <source>Overcast</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="268"/>
+        <source>Drizzle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="271"/>
+        <source>Light rain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="274"/>
+        <source>Moderate rain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="277"/>
+        <source>Shower</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="280"/>
+        <source>Hail</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="290"/>
+        <source>Light</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="294"/>
+        <source>Moderate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="298"/>
+        <source>Heavy</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Settings</name>
     <message>
         <location filename="../qml/pages/Settings.qml" line="52"/>
@@ -130,12 +193,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="69"/>
+        <location filename="../qml/pages/StartPage.qml" line="65"/>
+        <source>Color legend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/StartPage.qml" line="73"/>
         <source>Rainviewer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/StartPage.qml" line="209"/>
+        <location filename="../qml/pages/StartPage.qml" line="213"/>
         <source>Scale: %0 m/pixel ; zoom: %1</source>
         <translation type="unfinished"></translation>
     </message>

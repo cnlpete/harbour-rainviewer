@@ -61,6 +61,10 @@ Page {
                 text: qsTr("Settings")
                 onClicked: pageStack.push(Qt.resolvedUrl("Settings.qml"))
             }
+            MenuItem {
+                text: qsTr("Color legend")
+                onClicked: pageStack.push(Qt.resolvedUrl("ColorLegend.qml"))
+            }
         }
 
         RemorsePopup { id: remorse }

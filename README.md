@@ -8,7 +8,7 @@ Installable via [Chum](https://build.sailfishos.org/package/show/sailfishos:chum
 
 ## Screenshots
 
-| ![screenshot 1](screenshots/photo_5303021482609338239_w.jpg) | ![screenshot 2](screenshots/photo_5303021482609338244_w.jpg) | ![screenshot 3](screenshots/photo_5303021482609338240_w.jpg) |
-|     :---:      |     :---:      |     :---:      |
+| ![screenshot 1](screenshots/photo_5303021482609338239_w.jpg) | ![screenshot 2](screenshots/photo_5303021482609338244_w.jpg) | ![screenshot 3](screenshots/photo_5303021482609338240_w.jpg) | ![screenshot 4](screenshots/photo_5400178367308883249_w.jpg) |
+|     :---:      |     :---:      |     :---:      |     :---:      |
 
 
