@@ -35,12 +35,33 @@ Page {
             title: qsTr("Color legend")
         }
 
+        Item {
+            id: header2
+            anchors {
+                top: header.bottom
+                left: parent.left
+                right: parent.right
+                margins: Theme.horizontalPageMargin
+            }
+            height: headerlabel.height
+
+            Label {
+                id: headerlabel
+                text: qsTr("Rain")
+            }
+            Label {
+                text: qsTr("Snow")
+                anchors.right: parent.right
+                visible: settings.snow
+            }
+        }
+
         Row {
             id: content
             width: page.width - 2 * Theme.horizontalPageMargin
-            height: page.height - 2 * Theme.horizontalPageMargin - header.height
+            height: page.height - 2 * Theme.horizontalPageMargin - header.height - header2.height
             anchors {
-                top: header.bottom
+                top: header2.bottom
                 bottom: parent.bottom
                 left: parent.left
                 right: parent.right
@@ -49,10 +70,10 @@ Page {
             spacing: Theme.paddingMedium
 
             Item {
+                id: bar
                 width: Theme.horizontalPageMargin
                 height: parent.height
                 anchors.margins: Theme.horizontalPageMargin
-
 
                 Rectangle {
                     anchors.fill: parent
@@ -238,6 +259,7 @@ Page {
 
             ColumnLayout {
                 height: parent.height
+                width: (parent.width - parent.spacing) / 2 - bar.width - parent.spacing
 
                 Label {
                     text: qsTr("Overcast")
@@ -257,6 +279,150 @@ Page {
                 Label {
                     text: qsTr("Hail")
                 }
+            }
+
+            ColumnLayout {
+                height: parent.height
+                width: (parent.width - parent.spacing) / 2 - bar.width - parent.spacing
+                visible: settings.snow
+
+                Label {
+                    text: qsTr("Light")
+                    anchors.right: parent.right
+                }
+                Label {
+                    text: qsTr("Moderate")
+                    anchors.right: parent.right
+                }
+                Label {
+                    text: qsTr("Heavy")
+                    anchors.right: parent.right
+                }
+            }
+
+            Item {
+                width: Theme.horizontalPageMargin
+                height: parent.height
+                anchors.margins: Theme.horizontalPageMargin
+                visible: settings.snow
+
+                Rectangle {
+                    anchors.fill: parent
+                    color: "white"
+                }
+
+                Loader {
+                    id: loadersnow
+                     anchors.fill: parent
+                     sourceComponent: settings.rainColorScheme === 1 ? snows0
+                                    : settings.rainColorScheme === 2 ? snows1
+                                    : settings.rainColorScheme === 3 ? snows2
+                                    : settings.rainColorScheme === 4 ? snows1
+                                    : settings.rainColorScheme === 6 ? snows5
+                                    : settings.rainColorScheme === 7 ? snows1
+                                    : settings.rainColorScheme === 8 ? snows1
+                                                                     : snows0
+                }
+
+                Component { // Original
+                    id: snows0
+                    LinearGradient {
+                        anchors.fill: parent
+                        start: Qt.point(0, 0)
+                        end: Qt.point(0, parent.height)
+                        gradient:
+                            Gradient {
+                                 GradientStop { position: 0.0; color: "#00000000" } //rgba(0, 0, 0, 0) 0%
+                                 GradientStop { position: 0.0833; color: "#8fffff" }
+                                 GradientStop { position: 0.1667; color: "#7fefff" }
+                                 GradientStop { position: 0.25; color: "#6fdfff" }
+                                 GradientStop { position: 0.3333; color: "#5fcfff" }
+                                 GradientStop { position: 0.4167; color: "#4fafff" }
+                                 GradientStop { position: 0.5; color: "#3f9fff" }
+                                 GradientStop { position: 0.5833; color: "#2f8fff" }
+                                 GradientStop { position: 0.6667; color: "#1f7fff" }
+                                 GradientStop { position: 0.75; color: "#0f6fff" }
+                                 GradientStop { position: 0.8333; color: "#005fff" }
+                                 GradientStop { position: 0.9167; color: "#004fff" }
+                                 GradientStop { position: 0.9999; color: "#003fff" }
+                                 GradientStop { position: 1.0; color: "#000fff" }
+                             }
+                    }
+                }
+
+                Component { // UNiversal Blue, The Weather Channel (TWC), Rainbow, Dark Sky
+                    id: snows1
+                    LinearGradient {
+                        anchors.fill: parent
+                        start: Qt.point(0, 0)
+                        end: Qt.point(0, parent.height)
+                        gradient:
+                            Gradient {
+                                GradientStop { position: 0.0; color: "#00000000" } //rgba(0, 0, 0, 0) 0%
+                                GradientStop { position: 0.0909; color: "#9fdfff" }
+                                GradientStop { position: 0.1818; color: "#7fbfff" }
+                                GradientStop { position: 0.2727; color: "#5f9fff" }
+                                GradientStop { position: 0.3636; color: "#4f8fff" }
+                                GradientStop { position: 0.4545; color: "#3f7fff" }
+                                GradientStop { position: 0.5455; color: "#2f6fff" }
+                                GradientStop { position: 0.6364; color: "#1f5fff" }
+                                GradientStop { position: 0.7273; color: "#0f4fff" }
+                                GradientStop { position: 0.8182; color: "#003fff" }
+                                GradientStop { position: 0.9091; color: "#002fff" }
+                                GradientStop { position: 1.0; color: "#001fff" }
+                            }
+                    }
+                }
+
+                Component { // TITAN
+                    id: snows2
+                    LinearGradient {
+                        anchors.fill: parent
+                        start: Qt.point(0, 0)
+                        end: Qt.point(0, parent.height)
+                        gradient:
+                            Gradient {
+                                GradientStop { position: 0.0; color: "#2fcfcf" }
+                                GradientStop { position: 0.0909; color: "#9fdfff" }
+                                GradientStop { position: 0.1818; color: "#7fbfff" }
+                                GradientStop { position: 0.2727; color: "#5f9fff" }
+                                GradientStop { position: 0.3636; color: "#4f8fff" }
+                                GradientStop { position: 0.4545; color: "#3f7fff" }
+                                GradientStop { position: 0.5455; color: "#2f6fff" }
+                                GradientStop { position: 0.6364; color: "#1f5fff" }
+                                GradientStop { position: 0.7273; color: "#0f4fff" }
+                                GradientStop { position: 0.8182; color: "#003fff" }
+                                GradientStop { position: 0.9091; color: "#002fff" }
+                                GradientStop { position: 1.0; color: "#001fff" }
+                            }
+                    }
+                }
+
+                Component { // NEXRAD
+                    id: snows5
+                    LinearGradient {
+                        anchors.fill: parent
+                        start: Qt.point(0, 0)
+                        end: Qt.point(0, parent.height)
+                        gradient:
+                            Gradient {
+                                GradientStop { position: 0.0; color: "#e5fefe" }
+                                GradientStop { position: 0.0833; color: "#a3f3ff" }
+                                GradientStop { position: 0.1667; color: "#51cffd" }
+                                GradientStop { position: 0.25; color: "#0d99fc" }
+                                GradientStop { position: 0.3333; color: "#0f75fb" }
+                                GradientStop { position: 0.4167; color: "#1053fb" }
+                                GradientStop { position: 0.50; color: "#103ffb" }
+                                GradientStop { position: 0.5833; color: "#0b32cf" }
+                                GradientStop { position: 0.6667; color: "#0b32cf" }
+                                GradientStop { position: 0.75; color: "#0726a4" }
+                                GradientStop { position: 0.8333; color: "#0726a4" }
+                                GradientStop { position: 0.9167; color: "#031875" }
+                                GradientStop { position: 1.0; color: "#031875" }
+                             }
+                    }
+                }
+
             }
         }
     }

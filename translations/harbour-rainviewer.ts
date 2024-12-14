@@ -52,33 +52,58 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ColorLegend.qml" line="242"/>
+        <location filename="../qml/pages/ColorLegend.qml" line="50"/>
+        <source>Rain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="53"/>
+        <source>Snow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="265"/>
         <source>Overcast</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ColorLegend.qml" line="245"/>
+        <location filename="../qml/pages/ColorLegend.qml" line="268"/>
         <source>Drizzle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ColorLegend.qml" line="248"/>
+        <location filename="../qml/pages/ColorLegend.qml" line="271"/>
         <source>Light rain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ColorLegend.qml" line="251"/>
+        <location filename="../qml/pages/ColorLegend.qml" line="274"/>
         <source>Moderate rain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ColorLegend.qml" line="254"/>
+        <location filename="../qml/pages/ColorLegend.qml" line="277"/>
         <source>Shower</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ColorLegend.qml" line="257"/>
+        <location filename="../qml/pages/ColorLegend.qml" line="280"/>
         <source>Hail</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="290"/>
+        <source>Light snow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="294"/>
+        <source>Moderate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="298"/>
+        <source>Heavy</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
