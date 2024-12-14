@@ -19,6 +19,7 @@
 
 import QtQuick 2.0
 import QtGraphicalEffects 1.0
+import QtQuick.Layouts 1.0
 import Sailfish.Silica 1.0
 
 Page {
@@ -45,11 +46,18 @@ Page {
                 right: parent.right
                 margins: Theme.horizontalPageMargin
             }
+            spacing: Theme.paddingMedium
 
             Item {
                 width: Theme.horizontalPageMargin
                 height: parent.height
                 anchors.margins: Theme.horizontalPageMargin
+
+
+                Rectangle {
+                    anchors.fill: parent
+                    color: "white"
+                }
 
                 Loader {
                     id: loader
@@ -95,8 +103,8 @@ Page {
                         end: Qt.point(0, parent.height)
                         gradient:
                             Gradient {
-                                 GradientStop { position: 0.0; color: rgba(206, 192, 135, 0.59) }
-                                 GradientStop { position: 0.1; color: rgba(226, 212, 155, 0.78) }
+                                 GradientStop { position: 0.0; color: "#cec08796" }//rgba(206, 192, 135, 0.59) }
+                                 GradientStop { position: 0.1; color: "#e2d49bc7" }//rgba(226, 212, 155, 0.78) }
                                  GradientStop { position: 0.101; color: "#8de" }
                                  GradientStop { position: 0.2; color: "#00a3e0" }
                                  GradientStop { position: 0.3; color: "#07a" }
@@ -215,9 +223,9 @@ Page {
                         end: Qt.point(0, parent.height)
                         gradient:
                             Gradient {
-                                 GradientStop { position: 0.0; color:  rgba(0, 0, 0, 0) }
-                                 GradientStop { position: 0.2; color: rgba(0, 94, 182, 0.6) }
-                                 GradientStop { position: 0.3; color: rgba(36, 88, 175, 0.87) }
+                                 GradientStop { position: 0.0; color: "#00000000" }// rgba(0, 0, 0, 0) }
+                                 GradientStop { position: 0.2; color: "#005eb699" }//rgba(0, 94, 182, 0.6) }
+                                 GradientStop { position: 0.3; color: "#2458afde" }//rgba(36, 88, 175, 0.87) }
                                  GradientStop { position: 0.4; color: "#8e4b9b" }
                                  GradientStop { position: 0.5; color: "#fc5370" }
                                  GradientStop { position: 0.6; color: "#ffb76e" }
@@ -225,6 +233,29 @@ Page {
                                  GradientStop { position: 1.0; color: "#fffd05" }
                              }
                     }
+                }
+            }
+
+            ColumnLayout {
+                height: parent.height
+
+                Label {
+                    text: qsTr("Overcast")
+                }
+                Label {
+                    text: qsTr("Drizzle")
+                }
+                Label {
+                    text: qsTr("Light rain")
+                }
+                Label {
+                    text: qsTr("Moderate rain")
+                }
+                Label {
+                    text: qsTr("Shower")
+                }
+                Label {
+                    text: qsTr("Hail")
                 }
             }
         }

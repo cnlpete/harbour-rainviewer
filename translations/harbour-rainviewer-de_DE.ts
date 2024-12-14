@@ -47,8 +47,38 @@
 <context>
     <name>ColorLegend</name>
     <message>
-        <location filename="../qml/pages/ColorLegend.qml" line="34"/>
+        <location filename="../qml/pages/ColorLegend.qml" line="35"/>
         <source>Color legend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="242"/>
+        <source>Overcast</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="245"/>
+        <source>Drizzle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="248"/>
+        <source>Light rain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="251"/>
+        <source>Moderate rain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="254"/>
+        <source>Shower</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ColorLegend.qml" line="257"/>
+        <source>Hail</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
