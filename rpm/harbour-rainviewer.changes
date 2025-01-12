@@ -1,3 +1,6 @@
+* Sun Jan 12 2024 Hauke Schade <cnlpete@cnlpete.de> 0.3.1-1
+- add estonian translation thanks to Priit Jõerüüt
+
 * Thu Dec 14 2024 Hauke Schade <cnlpete@cnlpete.de> 0.3.0-1
 - add color legend page
 - better gps handling
