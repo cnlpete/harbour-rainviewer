@@ -26,6 +26,7 @@ DISTFILES += \
     qml/pages/Settings.qml \
     translations/harbour-rainviewer.ts \
     translations/harbour-rainviewer-de_DE.ts \
+    translations/harbour-rainviewer-et.ts \
     rpm/harbour-rainviewer.spec \
     rpm/harbour-rainviewer.changes \
 
