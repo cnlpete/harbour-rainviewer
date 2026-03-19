@@ -27,6 +27,7 @@ DISTFILES += \
     translations/harbour-rainviewer.ts \
     translations/harbour-rainviewer-de_DE.ts \
     translations/harbour-rainviewer-et.ts \
+    translations/harbour-rainviewer-sv.ts \
     rpm/harbour-rainviewer.spec \
     rpm/harbour-rainviewer.changes \
 
@@ -38,5 +39,7 @@ OTHER_FILES += \
 # following CONFIG line
 CONFIG += sailfishapp_i18n
 TRANSLATIONS += translations/harbour-rainviewer-de_DE.ts
+TRANSLATIONS += translations/harbour-rainviewer-et.ts
+TRANSLATIONS += translations/harbour-rainviewer-sv.ts
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
