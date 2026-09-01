@@ -42,7 +42,7 @@ ListModel {
         for (var i = 0; i < data.radar.past.length; i++) {
             const pastItem = data.radar.past[i]
             model.append({
-                             path: data.host + "/" + pastItem.path,
+                             path: data.host + pastItem.path,
                              time: pastItem.time
                          })
             //console.log("appending to model: ", pastItem)
@@ -52,7 +52,7 @@ ListModel {
         for (i = 0; i < data.radar.nowcast.length; i++) {
             const nowcastItem = data.radar.nowcast[i]
             model.append({
-                             path: data.host + "/" + nowcastItem.path,
+                             path: data.host + nowcastItem.path,
                              time: nowcastItem.time
                          })
             //console.log("appending to model: ", nowcastItem)

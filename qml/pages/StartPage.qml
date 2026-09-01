@@ -120,7 +120,7 @@ Page {
             onLatChanged: restart()
             property real lng: settings.lastLng
             onLngChanged: restart()
-            property real zoom: 11.0
+            property real zoom: 7.0
         }
 
         Component {
@@ -145,8 +145,8 @@ Page {
                         center: QtPositioning.coordinate(settings.lastLat, settings.lastLng)
                         zoomLevel: delayedValue.zoom
                         metersPerPixelTolerance: 0.1
-                        minimumZoomLevel: 6
-                        maximumZoomLevel: 12
+                        minimumZoomLevel: 4
+                        maximumZoomLevel: 7
                         pixelRatio: 1.0
 
                         //pixelRatio: 3.0
